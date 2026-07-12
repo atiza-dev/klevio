@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aviso legal — Klevio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
 </head>
@@ -24,7 +27,41 @@
         </button>
         <div class="nav-links" id="nav-links">
           <a class="nav-link" href="nosotros.html">Nosotros</a>
-          <a class="nav-link" href="servicios.html">Servicios</a>
+          <div class="nav-link-group">
+            <a class="nav-link" href="servicios.html">Servicios <span class="nav-plus">+</span></a>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown-col">
+                <div class="eyebrow">Servicios</div>
+                <a class="nav-dropdown-item" href="control.html">
+                  <h4>Control</h4>
+                  <p>Saber cómo estás, con datos fiables.</p>
+                </a>
+                <a class="nav-dropdown-item" href="direccion.html">
+                  <h4>Dirección</h4>
+                  <p>Rumbo y decisiones.</p>
+                </a>
+                <a class="nav-dropdown-item" href="financiacion.html">
+                  <h4>Financiación</h4>
+                  <p>Consigue el capital para crecer.</p>
+                </a>
+              </div>
+              <div class="nav-dropdown-col nav-dropdown-col--featured">
+                <div class="eyebrow">Casos destacados</div>
+                <div class="nav-dropdown-cases">
+                  <a class="nav-case-card" href="caso-servicios.html">
+                    <div class="placeholder nav-case-img"><span>caso</span></div>
+                    <div class="nav-case-label">Caso destacado</div>
+                    <h4>+38% de margen en 6 meses</h4>
+                  </a>
+                  <a class="nav-case-card" href="caso-ecommerce.html">
+                    <div class="placeholder nav-case-img"><span>caso</span></div>
+                    <div class="nav-case-label">Caso destacado</div>
+                    <h4>Cierre mensual en 3 días</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a class="nav-link" href="casos.html">Casos</a>
           <a class="nav-link" href="contacto.html">Contacto</a>
           <a class="btn-nav" href="contacto.html">Hablemos</a>
@@ -34,7 +71,7 @@
     <!-- Hero -->
     <section class="section section--no-border" style="padding-bottom:40px;">
       <div class="eyebrow">Legal</div>
-      <h1 style="margin:0;font:700 44px/1.1 sans-serif;color:var(--ink);letter-spacing:-.02em;">Aviso legal</h1>
+      <h1 style="margin:0;font:700 44px/1.1 'Inter', sans-serif;color:var(--ink);letter-spacing:-.02em;">Aviso legal</h1>
       <p class="legal-date">Última actualización: julio de 2026</p>
     </section>
 

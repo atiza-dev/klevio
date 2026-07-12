@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Casos — Klevio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
 </head>
@@ -24,7 +27,41 @@
         </button>
         <div class="nav-links" id="nav-links">
           <a class="nav-link" href="nosotros.html">Nosotros</a>
-          <a class="nav-link" href="servicios.html">Servicios</a>
+          <div class="nav-link-group">
+            <a class="nav-link" href="servicios.html">Servicios <span class="nav-plus">+</span></a>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown-col">
+                <div class="eyebrow">Servicios</div>
+                <a class="nav-dropdown-item" href="control.html">
+                  <h4>Control</h4>
+                  <p>Saber cómo estás, con datos fiables.</p>
+                </a>
+                <a class="nav-dropdown-item" href="direccion.html">
+                  <h4>Dirección</h4>
+                  <p>Rumbo y decisiones.</p>
+                </a>
+                <a class="nav-dropdown-item" href="financiacion.html">
+                  <h4>Financiación</h4>
+                  <p>Consigue el capital para crecer.</p>
+                </a>
+              </div>
+              <div class="nav-dropdown-col nav-dropdown-col--featured">
+                <div class="eyebrow">Casos destacados</div>
+                <div class="nav-dropdown-cases">
+                  <a class="nav-case-card" href="caso-servicios.html">
+                    <div class="placeholder nav-case-img"><span>caso</span></div>
+                    <div class="nav-case-label">Caso destacado</div>
+                    <h4>+38% de margen en 6 meses</h4>
+                  </a>
+                  <a class="nav-case-card" href="caso-ecommerce.html">
+                    <div class="placeholder nav-case-img"><span>caso</span></div>
+                    <div class="nav-case-label">Caso destacado</div>
+                    <h4>Cierre mensual en 3 días</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a class="nav-link is-active" href="casos.html">Casos</a>
           <a class="nav-link" href="contacto.html">Contacto</a>
           <a class="btn-nav" href="contacto.html">Hablemos</a>
@@ -32,60 +69,60 @@
       </nav>
 
     <!-- Hero -->
-    <section class="section">
+    <section class="section section--no-border" style="padding-bottom:32px;">
       <div class="eyebrow">Casos</div>
-      <h1 style="margin:0;font:700 48px/1.1 sans-serif;color:var(--ink);letter-spacing:-.02em;max-width:760px;">Resultados de nuestros clientes</h1>
-      <p style="margin:24px 0 0;max-width:660px;font:400 18px/1.55 sans-serif;color:var(--body-text);">Pymes de distintos sectores que hoy gestionan con datos. Estos son algunos de los resultados que hemos conseguido juntos.</p>
+      <h1 style="margin:0;font:700 48px/1.1 'Inter', sans-serif;color:var(--ink);letter-spacing:-.02em;max-width:760px;">Resultados de nuestros clientes</h1>
+      <p style="margin:24px 0 0;max-width:660px;font:400 18px/1.55 'Inter', sans-serif;color:var(--body-text);">Pymes de distintos sectores que hoy gestionan con datos. Estos son algunos de los resultados que hemos conseguido juntos.</p>
     </section>
 
     <!-- Casos (lista) -->
     <section class="section section--alt">
-      <div style="display:flex;flex-direction:column;gap:24px;">
+      <div class="grid grid-3 grid-divided">
 
-        <div class="card card--row" style="padding:34px;gap:40px;align-items:center;">
-          <div class="logo-ph" style="flex:none;width:150px;height:70px;font-size:9px;">LOGO</div>
-          <div style="flex:1;">
-            <div class="eyebrow" style="margin-bottom:8px;">Empresa de servicios</div>
-            <h3 style="font:700 26px/1.15 sans-serif;">+38% de margen en 6 meses</h3>
-            <p style="margin-top:10px;max-width:560px;font-size:15px;">Optimizamos la estructura de costes y la política de precios, con un cuadro de mando que actualiza la rentabilidad por servicio cada semana.</p>
-          </div>
-          <a class="link-underline" style="flex:none;" href="contacto.html">Ver caso →</a>
-        </div>
+        <a class="divider-cell case-logo-cell" href="caso-servicios.html">
+          <div class="logo-ph" style="width:130px;height:60px;font-size:9px;">LOGO</div>
+        </a>
 
-        <div class="card card--row" style="padding:34px;gap:40px;align-items:center;">
-          <div class="logo-ph" style="flex:none;width:150px;height:70px;font-size:9px;">LOGO</div>
-          <div style="flex:1;">
-            <div class="eyebrow" style="margin-bottom:8px;">E-commerce</div>
-            <h3 style="font:700 26px/1.15 sans-serif;">Cierre mensual en 3 días</h3>
-            <p style="margin-top:10px;max-width:560px;font-size:15px;">Automatizamos la contabilidad y el reporting de un negocio en pleno crecimiento, con datos fiables disponibles cada primer día de mes.</p>
-          </div>
-          <a class="link-underline" style="flex:none;" href="contacto.html">Ver caso →</a>
-        </div>
+        <a class="divider-cell case-logo-cell" href="caso-ecommerce.html">
+          <div class="logo-ph" style="width:130px;height:60px;font-size:9px;">LOGO</div>
+        </a>
 
-        <div class="card card--row" style="padding:34px;gap:40px;align-items:center;">
-          <div class="logo-ph" style="flex:none;width:150px;height:70px;font-size:9px;">LOGO</div>
-          <div style="flex:1;">
-            <div class="eyebrow" style="margin-bottom:8px;">Empresa industrial</div>
-            <h3 style="font:700 26px/1.15 sans-serif;">1,2M€ de financiación</h3>
-            <p style="margin-top:10px;max-width:560px;font-size:15px;">Preparamos la documentación, montamos las previsiones y negociamos con la banca hasta cerrar la financiación necesaria para crecer.</p>
-          </div>
-          <a class="link-underline" style="flex:none;" href="contacto.html">Ver caso →</a>
-        </div>
+        <a class="divider-cell case-logo-cell" href="caso-industrial.html">
+          <div class="logo-ph" style="width:130px;height:60px;font-size:9px;">LOGO</div>
+        </a>
 
       </div>
     </section>
 
-    <!-- Caso destacado -->
+    <!-- Datos / logros -->
     <section class="section">
-      <div class="eyebrow">Caso destacado</div>
-      <div class="split split--stretch" style="gap:56px;">
-        <div class="placeholder" style="flex:1;min-height:340px;"><span>imagen / dashboard</span></div>
-        <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
-          <div class="logo-ph" style="width:130px;height:56px;font-size:9px;margin-bottom:24px;">LOGO</div>
-          <h2 style="margin:0;font:700 34px/1.15 sans-serif;color:var(--ink);letter-spacing:-.01em;">De cerrar a ciegas a decidir con datos</h2>
-          <p style="margin:16px 0 0;max-width:480px;font:400 15px/1.55 sans-serif;color:var(--body-text);">Montamos su capa de datos, automatizamos el cierre y creamos los cuadros de mando. Hoy el equipo directivo toma decisiones cada semana con información fiable.</p>
-          <blockquote style="margin:26px 0 0;padding:0 0 0 20px;border-left:3px solid var(--ph-border);font:500 18px/1.5 sans-serif;color:var(--ink);max-width:480px;">"Por fin sabemos cómo estamos en tiempo real. Klevio nos dio el control que nunca tuvimos."</blockquote>
-          <div style="margin-top:16px;font:600 13px/1.4 sans-serif;color:var(--body-text);">Dirección General · Empresa de servicios</div>
+      <div style="max-width:560px;margin:0 auto 48px;text-align:center;">
+        <h2 style="margin:0;font:700 30px/1.2 'Inter', sans-serif;color:var(--ink);letter-spacing:-.01em;">Resultados que hablan por nosotros</h2>
+      </div>
+      <div class="grid grid-3 grid-divided">
+        <div class="divider-cell">
+          <p class="stat-number">+38%</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">de margen medio conseguido en 6 meses</p>
+        </div>
+        <div class="divider-cell">
+          <p class="stat-number">3 días</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">para cerrar el mes, con datos fiables</p>
+        </div>
+        <div class="divider-cell">
+          <p class="stat-number">1,2M€</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">de financiación conseguida para crecer</p>
+        </div>
+        <div class="divider-cell">
+          <p class="stat-number">40+</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">pymes acompañadas en su gestión financiera</p>
+        </div>
+        <div class="divider-cell">
+          <p class="stat-number">&lt;24h</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">tiempo medio de respuesta del equipo</p>
+        </div>
+        <div class="divider-cell">
+          <p class="stat-number">95%</p>
+          <p class="stat-desc" style="margin:8px 0 0;font-size:14px;color:var(--body-text);">de clientes que renuevan cada año</p>
         </div>
       </div>
     </section>
@@ -93,7 +130,7 @@
     <!-- Final CTA -->
     <section class="section section--cta">
       <div style="max-width:640px;margin:0 auto;text-align:center;">
-        <h2 style="margin:0;font:700 38px/1.15 sans-serif;color:var(--ink);letter-spacing:-.01em;">¿Preparado para gestionar con claridad?</h2>
+        <h2 style="margin:0;font:700 38px/1.15 'Inter', sans-serif;color:var(--ink);letter-spacing:-.01em;">¿Preparado para gestionar con claridad?</h2>
         <div style="margin-top:30px;display:flex;justify-content:center;">
           <a class="btn btn-primary btn-large" href="contacto.html">Hablemos</a>
         </div>
